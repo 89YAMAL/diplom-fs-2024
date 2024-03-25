@@ -18,7 +18,7 @@ Laravel - 10.44.0
 
 ## Инструкция по запуску проекта
 
-1. Сделать git clone репозитория (https://github.com/89YAMAL/diplom-netology-)
+1. Сделать git clone репозитория (https://github.com/89YAMAL/diplom-fs-2024)
 2. Изменить название файла ".env.example" на ".env"
 3. В файле ".env" указать абсолютный путь в переменной DB_DATABASE=/Users/......./database/database.sqlite
 4. Установить composer (если отсутствует)
@@ -32,3 +32,7 @@ Laravel - 10.44.0
 - http://127.0.0.1:8000/admin
 - email: admin@mail.ru
 - пароль: netology
+
+## P.s.
+
+В базе данных уже сохранена сетка сеансов с 28/03 по 02/04/2024. База данных сохранена в папке database (database.sqlite).
