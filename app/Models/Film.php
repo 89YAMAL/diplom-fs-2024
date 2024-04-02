@@ -9,7 +9,11 @@ class Film extends Model
 {
     use HasFactory;
 
-    protected $fillabel = [
-        'title', 'duration', 'description', 'country', 'image'
+    protected $fillable = [
+        'title', 
+        'duration', 
+        'description', 
+        'country', 
+        'image'
     ];
 }

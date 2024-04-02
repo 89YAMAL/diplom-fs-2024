@@ -9,8 +9,11 @@ class Hall extends Model
 {
     use HasFactory;
 
-    protected $fillabel = [
-        'name', 'config', 'standart_price', 'vip_price',
+    protected $fillable = [
+        'name', 
+        'config', 
+        'standart_price', 
+        'vip_price'
     ];
 
     public function sessions()

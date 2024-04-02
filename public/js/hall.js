@@ -1,6 +1,5 @@
 // переименовываем ряды
 let confStepRow = Array.from(document.querySelectorAll('.conf-step__row'));
-
 confStepRow.forEach(element => {
     element.className = 'buying-scheme__row';
 });
@@ -9,15 +8,12 @@ confStepRow.forEach(element => {
 let chairStandart = Array.from(document.getElementsByClassName('conf-step__chair conf-step__chair_standart'));
 let chairDisabled = Array.from(document.getElementsByClassName('conf-step__chair conf-step__chair_disabled'));
 let chairVip = Array.from(document.getElementsByClassName('conf-step__chair conf-step__chair_vip'));
-
 chairStandart.forEach(element => {
     element.className = 'buying-scheme__chair buying-scheme__chair_standart';
 });
-
 chairDisabled.forEach(element => {
     element.className = 'buying-scheme__chair buying-scheme__chair_disabled';
 });
-
 chairVip.forEach(element => {
     element.className = 'buying-scheme__chair buying-scheme__chair_vip';
 });
@@ -32,13 +28,10 @@ function changeSeats() {
         seat.classList.toggle('buying-scheme__chair_selected');
     }))
 }
-
 changeSeats();
 
 //отправка обновленной конфигурации зала и забронированых мест на сервер
 let size = document.querySelector('.buying-scheme__wrapper');
-
-
 $(document).ready(function () {
     $('#acceptin-button').click(function () {
         let orders = Array();
@@ -64,7 +57,6 @@ $(document).ready(function () {
         });
         let config = size.innerHTML;
         let id = document.querySelector('.buying__info-description').id;
-        
         $.ajax({
             url: '/payment/update',
             type: 'POST',
@@ -84,4 +76,3 @@ $(document).ready(function () {
           })
     });    
  })
-
